@@ -11,6 +11,7 @@ import android.widget.RadioGroup;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Initialize variables
     private RadioGroup diff_group;
     private RadioButton difficulty;
     private Button submit;
@@ -20,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        submit = findViewById(R.id.ready);
+        // Get button and set listener
+        submit = findViewById(R.id.submit);
         submit.setOnClickListener(new onClickListener());
     }
 
@@ -28,16 +30,19 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
 
+            // Find radiogroup and clicked radiobutton
             diff_group = findViewById(R.id.difficulty);
             int sel_diff = diff_group.getCheckedRadioButtonId();
             difficulty = findViewById(sel_diff);
 
-            EditText username = findViewById(R.id.name);
+            // Get name, enter anonymous if it's empty
+            EditText username = findViewById(R.id.name_view);
             String name = username.getText().toString();
             if (name.isEmpty()) {
                 name = "Anonymous";
             }
 
+            // Pass to next activity
             Intent intent = new Intent(MainActivity.this, GameplayActivity.class);
             Bundle bundle = new Bundle();
             bundle.putString("difficulty", difficulty.getText().toString());

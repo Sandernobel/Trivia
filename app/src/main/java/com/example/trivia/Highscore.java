@@ -3,9 +3,9 @@ package com.example.trivia;
 public class Highscore {
 
     private String name;
-    private int score;
+    private float score;
 
-    public Highscore(String name, int score) {
+    public Highscore(String name, float score) {
         this.name = name;
         this.score = score;
     }
@@ -14,15 +14,7 @@ public class Highscore {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getScore() {
+    public float getScore() {
         return score;
-    }
-
-    public void setScore(int score) {
-        this.score = score;
     }
 }

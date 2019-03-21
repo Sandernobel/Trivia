@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/template_blank"
+    android:orientation="vertical"
+    tools:context=".GameplayActivity">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="173dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="321dp"
+            android:layout_height="136dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="bottom"
+            android:paddingStart="65dp"
+            android:text="Score: "
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="287dp" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="422dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/is_true"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="128dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/button"
+                android:onClick="checkCorrect"
+                android:text="True"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toTopOf="@+id/is_false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.39"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="spread_inside" />
+
+            <Button
+                android:id="@+id/is_false"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="128dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/button"
+                android:onClick="checkCorrect"
+                android:text="False"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.38"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/is_true"
+                app:layout_constraintVertical_bias="0.48000002" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

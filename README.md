@@ -6,6 +6,6 @@ Extras:
 - Choose between three difficulties, which will affect your score multiplier
 
 ![image](https://github.com/Sandernobel/Trivia/blob/master/doc/TriviaMain.PNG)
-![image](https://github.com/Sandernobel/Trivia/blob/master/doc/TriviaQuestionsLand.PNG)
-![image](https://github.com/Sandernobel/Trivia/blob/master/doc/TriviaQuestionsLand2.PNG)
+![image](https://github.com/Sandernobel/Trivia/blob/master/doc/TriviaQuestionLand.PNG)
+![image](https://github.com/Sandernobel/Trivia/blob/master/doc/TriviaQuestionLand2.PNG)
 ![image](https://github.com/Sandernobel/Trivia/blob/master/doc/TriviaHighscore.PNG)
